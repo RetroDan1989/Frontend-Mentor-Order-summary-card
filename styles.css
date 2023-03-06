@@ -29,6 +29,12 @@ body {
     padding: 20px;
     background-color: var(--Pale_blue);
     font-family: 'Red Hat Display', sans-serif;
+    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
 
 section {
