@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ :root {
+    /* ### Primary */
+
+--Pale_blue: hsl(225, 100%, 94%);
+--Bright_blue: hsl(245, 75%, 52%);
+
+/* ### Neutral */
+
+--Very_pale_blue: hsl(225, 100%, 98%);
+--Desaturated_blue: hsl(224, 23%, 55%);
+--Dark_blue: hsl(223, 47%, 23%);
+
+--Espacio__abajo:25px;
+ }
+
+.card__img {
+    max-width: 100%;
+    margin-bottom: var(--Espacio__abajo);
+}
+
+body {
+    padding: 20px;
+    background-color: var(--Pale_blue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+section {
+    margin: 0px 20px;
+}
+
+.card {
+    width: 328px;
+    height: 570px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    background-color: var(--Very_pale_blue);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.1);
+}
+
+.card__title {
+    text-align: center;
+    margin-bottom: var(--Espacio__abajo);
+    color: var(--Dark_blue);
+    font-weight: 900;
+}
+
+.card__paragraph {
+    text-align: center;
+    line-height: 25px;
+    padding: 0px 20px;
+    font-size: 16px;
+    margin-bottom: var(--Espacio__abajo);
+
+    color: var(--Desaturated_blue);
+}
+
+.card__priceBox {
+    display: flex;
+    background-color: rgba(0,0,0,0.02);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: var(--Espacio__abajo);
+}
+
+.priceBox__priceDetails {
+    line-height: 22px;
+    margin-left: -20px;
+}
+
+.priceBox__priceDetails li {
+    list-style: none;
+}
+
+.priceBox__priceDetails li:nth-child(1) {
+    color: var(--Dark_blue);
+    font-weight: 900;
+}
+
+.priceBox__priceDetails li:nth-child(2) {
+    color: var(--Desaturated_blue);
+}
+
+.priceBox__link {
+    color: var(--Bright_blue);
+}
+
+.card__buttom {
+    width: 100%;
+    padding: 14px 10px;
+    background-color: var(--Bright_blue);
+    border-radius: 10px;
+    border: none;
+    color: var(--Very_pale_blue);
+    margin-bottom: var(--Espacio__abajo);
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.2);
+}
+
+h5 {
+    text-align: center;
+    font-size: 16px;
+    color:var(--Desaturated_blue);
+}
+
+/* Active elements */
+
+.priceBox__link {
+    cursor: pointer;
+}
+
+.card__buttom:hover {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--Desaturated_blue);
+}
+
+.card__cancelOrder:hover {
+    cursor: pointer;
+    color: var(--Dark_blue);
+}
